@@ -1,4 +1,4 @@
- const TestButtonComponent = ({ title }: { title: string }) => {
+const TestButtonComponent = ({ title }: { title: string }) => {
     return (
       <button>{title}</button>
     );
