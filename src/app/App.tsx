@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from '../assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
 type CountState = number;
 
-
 function App() {
   const intialState: CountState = 0;
-  const [count, setCount] = useState(intialState)
+  const [count, setCount] = useState(intialState);
 
   return (
     <>
@@ -33,7 +32,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

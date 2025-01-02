@@ -1,5 +1,5 @@
-import './Spinner.css'
+import './Spinner.css';
 
-const Spinner = () => <div className="spinner"></div>
+const Spinner = () => <div className="spinner"></div>;
 
 export default Spinner;

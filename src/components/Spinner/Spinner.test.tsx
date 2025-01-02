@@ -1,9 +1,9 @@
-import Spinner from "./Spinner";
-import { render } from "@testing-library/react";
+import Spinner from './Spinner';
+import { render } from '@testing-library/react';
 
-describe("Spinner", () => {
-  it("should render", () => {
+describe('Spinner', () => {
+  it('should render', () => {
     const { container } = render(<Spinner />);
-    expect(container.firstChild).toHaveClass("spinner");
+    expect(container.firstChild).toHaveClass('spinner');
   });
 });
