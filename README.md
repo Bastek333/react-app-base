@@ -1,5 +1,23 @@
 # Starting template for React 19 projects - includes: React 19 + TypeScript + Vite + Vitest + Prettier
 
+Prerequisites:
+
+Vitest requires Vite >=v5.0.0 and Node >=v18.0.0
+
+Current template version working on:
+
+nvm -v
+0.39.7
+
+npm -v
+10.7.0
+
+node -v
+v20.15.1
+
+Husky - npm not found error:
+https://typicode.github.io/husky/how-to.html#solution
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
