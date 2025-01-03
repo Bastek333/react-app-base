@@ -8,11 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "format": "prettier --write ./src",
+    "prepare": "husky",
     "preview": "vite preview",
     "test": "vitest",
     "test-ui": "vitest --ui",
-    "coverage": "vitest run --coverage",
-    "prepare": "husky"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^19.0.0",

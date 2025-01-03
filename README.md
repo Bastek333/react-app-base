@@ -54,3 +54,25 @@ export default tseslint.config({
 ## Vitest with React Testing Library
 
 vitest.setup.ts file contain some predefined test actions like cleanup
+
+## Husky - git pre commit actions
+
+Solution for npm command not found.
+
+Husky sources ~/.config/husky/init.sh before each Git hook. Copy your version manager initialization code here to ensure it runs in GUIs.
+
+Example with nvm:
+
+shell
+
+# ~/.config/husky/init.sh
+
+export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+Alternatively, if your shell startup file is fast and lightweight, source it directly:
+
+shell
+
+# ~/.config/husky/init.sh
+
+. ~/.zshrc
