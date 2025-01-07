@@ -1,8 +1,14 @@
-# Starting template for React 19 projects - includes: React 19 + TypeScript + Vite + Vitest + Prettier
+# Starting template for React 19 projects - includes: React 19 + TypeScript + Vite + Vitest + Prettier + React Router Library
 
 Prerequisites:
 
 Vitest requires Vite >=v5.0.0 and Node >=v18.0.0
+
+React Router v7 requires the following minimum versions:
+
+node@20
+react@18
+react-dom@18
 
 Current template version working on:
 
@@ -94,3 +100,7 @@ shell
 # ~/.config/husky/init.sh
 
 . ~/.zshrc
+
+## React Router
+
+https://reactrouter.com/start/library/installation
