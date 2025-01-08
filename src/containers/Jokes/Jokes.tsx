@@ -1,4 +1,3 @@
-
 import { Suspense, useState } from 'react';
 import Joke from '../../components/Joke/Joke';
 import Spinner from '../../components/Spinner/Spinner';
