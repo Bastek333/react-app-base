@@ -4,6 +4,7 @@ import Navigation from '../containers/Navigation/Navigation';
 import Vite from '../containers/Vite/Vite';
 import React from '../containers/React/React';
 import Page404 from '../containers/Page404/Page404';
+import Jokes from '../containers/Jokes/Jokes';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="vite" element={<Vite />} />
         <Route path="react" element={<React />} />
+        <Route path="jockes" element={<Jokes />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </>

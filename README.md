@@ -79,6 +79,8 @@ export default tseslint.config({
 
 vitest.setup.ts file contain some predefined test actions like cleanup
 
+https://testing-library.com/docs/
+
 ## Husky - git pre commit actions
 
 Solution for npm command not found.
