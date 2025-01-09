@@ -4,6 +4,7 @@ import { render } from '@testing-library/react';
 describe('Spinner', () => {
   it('should render', () => {
     const { container } = render(<Spinner />);
-    expect(container.firstChild).toHaveClass('spinner');
+    expect(container.firstChild).toHaveClass('spinner-container');
+    expect(container.firstChild?.firstChild).toHaveClass('spinner');
   });
 });
