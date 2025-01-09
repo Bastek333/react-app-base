@@ -1,4 +1,4 @@
-import { screen, render, act  } from '@testing-library/react';
+import { screen, render, act } from '@testing-library/react';
 import Jokes from './Jokes.tsx';
 
 describe('Jokes container test', () => {
@@ -18,5 +18,5 @@ describe('Jokes container test', () => {
       })
     ).toHaveTextContent('Joke')
     ) */
-});
+  });
 });
