@@ -1,14 +1,14 @@
-import { Routes, Route } from 'react-router';
-import Home from '../containers/Home/Home';
-import Navigation from '../containers/Navigation/Navigation';
-import Vite from '../containers/Vite/Vite';
-import React from '../containers/React/React';
-import Page404 from '../containers/Page404/Page404';
-import Jokes from '../containers/Jokes/Jokes';
-import ReactQuery from '../containers/ReactQuery/ReactQuery';
-import DummyDataDirect from '../containers/DummyDataDirect/DummyDataDirect';
+import { Routes, Route } from "react-router";
+import Home from "../containers/Home/Home";
+import Navigation from "../containers/Navigation/Navigation";
+import Vite from "../containers/Vite/Vite";
+import React from "../containers/React/React";
+import Page404 from "../containers/Page404/Page404";
+import Jokes from "../containers/Jokes/Jokes";
+import ReactQuery from "../containers/ReactQuery/ReactQuery";
+import DummyDataDirect from "../containers/DummyDataDirect/DummyDataDirect";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (

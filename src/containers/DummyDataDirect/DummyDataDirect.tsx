@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface DummyDataDrectInterface {
   userId: number;
@@ -14,12 +14,12 @@ const DummyDataDirect: React.FC = () => {
 
   useEffect(() => {
     const getData = async () => {
-      await fetch('https://jsonplaceholder.typicode.com/todos/1')
+      await fetch("https://jsonplaceholder.typicode.com/todos/1")
         .then((res) => {
           if (res.ok) {
             res.json().then((data) => setData(data));
           } else {
-            throw new Error('Network response was not ok.');
+            throw new Error("Network response was not ok.");
           }
         })
         .catch((error) => console.log(error.message));

@@ -1,7 +1,7 @@
-import { Suspense, useState } from 'react';
-import Joke from '../../components/Joke/Joke';
-import Spinner from '../../components/Spinner/Spinner';
-import getJokes from '../../api/getJokes';
+import { Suspense, useState } from "react";
+import Joke from "../../components/Joke/Joke";
+import Spinner from "../../components/Spinner/Spinner";
+import getJokes from "../../api/getJokes";
 
 const Jokes = () => {
   const [apiCallPromise, setApiCallPromise] = useState(() => getJokes());

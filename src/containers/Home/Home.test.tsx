@@ -1,14 +1,14 @@
-import { screen, render } from '@testing-library/react';
-import Home from './Home';
+import { screen, render } from "@testing-library/react";
+import Home from "./Home";
 
-describe('Home container test', () => {
-  it('should render Home heading', () => {
+describe("Home container test", () => {
+  it("should render Home heading", () => {
     render(<Home />);
 
     expect(
-      screen.getByRole('heading', {
+      screen.getByRole("heading", {
         level: 2,
-      })
-    ).toHaveTextContent('Home');
+      }),
+    ).toHaveTextContent("Home");
   });
 });

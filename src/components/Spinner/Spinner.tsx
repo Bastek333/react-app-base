@@ -1,4 +1,4 @@
-import './Spinner.css';
+import "./Spinner.css";
 
 const Spinner = () => (
   <div data-testid="spinner" className="spinner-container">
