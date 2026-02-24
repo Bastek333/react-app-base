@@ -5,6 +5,8 @@ import Vite from '../containers/Vite/Vite';
 import React from '../containers/React/React';
 import Page404 from '../containers/Page404/Page404';
 import Jokes from '../containers/Jokes/Jokes';
+import ReactQuery from '../containers/ReactQuery/ReactQuery';
+import DummyDataDirect from '../containers/DummyDataDirect/DummyDataDirect';
 
 import './App.css';
 
@@ -17,7 +19,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path="vite" element={<Vite />} />
         <Route path="react" element={<React />} />
-        <Route path="jockes" element={<Jokes />} />
+        <Route path="jokes" element={<Jokes />} />
+        <Route path="react-query" element={<ReactQuery />} />
+        <Route path="dummy-data-direct" element={<DummyDataDirect />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </>
