@@ -5,6 +5,7 @@ import Vite from '../containers/Vite/Vite';
 import React from '../containers/React/React';
 import Page404 from '../containers/Page404/Page404';
 import Jokes from '../containers/Jokes/Jokes';
+import DummyData from '../components/DummyData/DummyData';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="vite" element={<Vite />} />
         <Route path="react" element={<React />} />
         <Route path="jockes" element={<Jokes />} />
+        <Route path="dummy-data" element={<DummyData />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </>
