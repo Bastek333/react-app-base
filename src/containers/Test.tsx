@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Test.css';
 
 const Test: React.FC = () => {
@@ -8,39 +8,40 @@ const Test: React.FC = () => {
 
   useEffect(() => {
     const getData = async () => {
-      await fetch('https://jsonplaceholder.typicode.com/users')
-      .then((res) => {
+      await fetch('https://jsonplaceholder.typicode.com/users').then((res) => {
         if (res.ok) {
           res.json().then((data) => {
-            setData(data)
-            setFilteredData(data)})
+            setData(data);
+            setFilteredData(data);
+          });
         }
-      })
-    }
+      });
+    };
 
     getData();
-  },[])
+  }, []);
 
   const handleChange = (event) => {
-    setInput(event.target.value)
-  }
+    setInput(event.target.value);
+  };
 
   useEffect(() => {
-    const filteredData = data.filter(item => item?.username === input)
+    const filteredData = data.filter((item) => item?.username === input);
     setFilteredData(filteredData);
-  },[input])
+  }, [input]);
 
-console.log(input)
+  console.log(input);
 
   return (
     <>
-    <input onChange={handleChange}></input>
-    <ul>
-      {filteredData.map(item => <li key={item?.id}>{`${item?.username} ${item.email}`}</li>)}
-    </ul>
+      <input onChange={handleChange}></input>
+      <ul>
+        {filteredData.map((item) => (
+          <li key={item?.id}>{`${item?.username} ${item.email}`}</li>
+        ))}
+      </ul>
     </>
-  )
-
-}
+  );
+};
 
 export default Test;

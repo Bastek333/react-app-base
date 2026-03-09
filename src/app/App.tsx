@@ -5,7 +5,7 @@ import Vite from '../containers/Vite/Vite';
 import React from '../containers/React/React';
 import Page404 from '../containers/Page404/Page404';
 import Jokes from '../containers/Jokes/Jokes';
-import Test from '../containers/Test'
+import Test from '../containers/Test';
 
 import './App.css';
 
