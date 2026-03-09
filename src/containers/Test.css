@@ -1,0 +1,9 @@
+li {
+  list-style: none;
+  border: 1px solid red;
+  margin-bottom: 2px;
+} 
+
+ul:nth-child(even) {
+  background-color: grey;
+}
