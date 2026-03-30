@@ -33,9 +33,11 @@ const Test: React.FC = () => {
     <>
       <input onChange={handleChange}></input>
       <ul>
-        {data.filter(item => input ? item.username.includes(input) : true).map((item) => (
-          <li key={item?.id}>{`${item?.username} ${item.email}`}</li>
-        ))}
+        {data
+          .filter((item) => (input ? item.username.includes(input) : true))
+          .map((item) => (
+            <li key={item?.id}>{`${item?.username} ${item.email}`}</li>
+          ))}
       </ul>
     </>
   );
