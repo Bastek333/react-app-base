@@ -13,7 +13,7 @@ const ReactQuery = () => {
 			<InvalidateButton />
 		</QueryClientProvider>
 	);
-}
+};
 
 const Example = () => {
 	const { isPending, error, data } = useQuery({
@@ -37,7 +37,7 @@ const Example = () => {
 			<strong>🍴 {data.forks_count}</strong>
 		</div>
 	);
-}
+};
 
 const InvalidateButton: React.FC = () => {
 	const handleClick = () => {
