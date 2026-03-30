@@ -11,7 +11,7 @@ const React = () => {
 			<h2>Home</h2>
 			<div className="card">
 				<button onClick={() => setCount((count) => count + 1)}>
-					{`Clicked ${count} ${count !== 1 ? 'times' : 'time'}`}
+					{`Clicked ${count} ${count !== 1 ? "times" : "time"}`}
 				</button>
 			</div>
 		</>

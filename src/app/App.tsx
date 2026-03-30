@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import Home from "../containers/Home/Home";
 import Navigation from "../containers/Navigation/Navigation";
-import Footer from "../containers/Footer/Footer"
+import Footer from "../containers/Footer/Footer";
 import Vite from "../containers/Vite/Vite";
 import React from "../containers/React/React";
 import Biome from "../containers/Biome/Biome";
@@ -20,12 +20,12 @@ function App() {
 				<Route index element={<Home />} />
 				<Route path="vite" element={<Vite />} />
 				<Route path="react" element={<React />} />
-        <Route path="biome" element={<Biome />} />
+				<Route path="biome" element={<Biome />} />
 				<Route path="jokes" element={<Jokes />} />
 				<Route path="list" element={<List />} />
 				<Route path="*" element={<Page404 />} />
 			</Routes>
-      <Footer />
+			<Footer />
 		</>
 	);
 }
