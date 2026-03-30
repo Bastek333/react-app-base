@@ -4,22 +4,16 @@ import { BrowserRouter } from "react-router";
 import { screen, render } from "@testing-library/react";
 
 describe("Test Navigation Container", () => {
-  it("should render Navigation links", () => {
-    render(
-      <BrowserRouter>
-        <Navigation />
-      </BrowserRouter>,
-    );
+	it("should render Navigation links", () => {
+		render(
+			<BrowserRouter>
+				<Navigation />
+			</BrowserRouter>,
+		);
 
-<<<<<<< HEAD
-    expect(screen.getByText("Home")).exist;
-    expect(screen.getByText("Vite")).exist;
-    expect(screen.getByText("React")).exist;
-=======
-    expect(screen.getByText('Home')).exist;
-    expect(screen.getByText('Vite')).exist;
-    expect(screen.getByText('React')).exist;
-    expect(screen.getByText('Biome')).exist;
->>>>>>> origin/base
-  });
+		expect(screen.getByText("Home")).exist;
+		expect(screen.getByText("Vite")).exist;
+		expect(screen.getByText("React")).exist;
+		expect(screen.getByText("Biome")).exist;
+	});
 });
