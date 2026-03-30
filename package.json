@@ -12,7 +12,10 @@
     "preview": "vite preview",
     "test": "vitest",
     "test-ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "biome:format": "biome format --write ./src",
+    "biome:lint": "biome lint --write ./src",
+    "biome:check": "biome check --write ./src"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -20,6 +23,7 @@
     "react-router": "^7.1.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.10",
     "@eslint/js": "^9.17.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
