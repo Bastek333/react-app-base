@@ -6,7 +6,7 @@ import {
 
 const queryClient = new QueryClient();
 
-export default function ReactQuery() {
+const ReactQuery = () => {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<Example />
@@ -15,7 +15,7 @@ export default function ReactQuery() {
 	);
 }
 
-function Example() {
+const Example = () => {
 	const { isPending, error, data } = useQuery({
 		queryKey: ["repoData"],
 		queryFn: () =>
@@ -46,3 +46,5 @@ const InvalidateButton: React.FC = () => {
 
 	return <button onClick={handleClick}>Invalidate</button>;
 };
+
+export default ReactQuery;
