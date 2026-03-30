@@ -38,6 +38,12 @@ h1 {
 	line-height: 1.1;
 }
 
+section h3 {
+	color: darkgray;
+	font-size: 1.2em;
+	line-height: 1;
+}
+
 button {
 	border-radius: 8px;
 	border: 1px solid transparent;

@@ -7,7 +7,6 @@ import React from "../containers/React/React";
 import Biome from "../containers/Biome/Biome";
 import Page404 from "../containers/Page404/Page404";
 import Jokes from "../containers/Jokes/Jokes";
-import List from "../containers/List/List";
 
 import "./App.css";
 
@@ -22,7 +21,6 @@ function App() {
 				<Route path="react" element={<React />} />
 				<Route path="biome" element={<Biome />} />
 				<Route path="jokes" element={<Jokes />} />
-				<Route path="list" element={<List />} />
 				<Route path="*" element={<Page404 />} />
 			</Routes>
 			<Footer />
