@@ -4,6 +4,6 @@ li {
   margin-bottom: 2px;
 }
 
-ul:nth-child(even) {
+li:nth-child(even) {
   background-color: grey;
 }

@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Test.css';
 
+interface User {
+  id: number;
+  username: string;
+  email: string;
+}
+
 const Test: React.FC = () => {
-  const [data, setData] = useState([]);
-  const [input, setInput] = useState();
-  const [filteredData, setFilteredData] = useState([]);
+  const [data, setData] = useState<User[]>([]);
+  const [input, setInput] = useState<string>('');
 
   useEffect(() => {
     const getData = async () => {
@@ -12,7 +17,6 @@ const Test: React.FC = () => {
         if (res.ok) {
           res.json().then((data) => {
             setData(data);
-            setFilteredData(data);
           });
         }
       });
@@ -21,22 +25,15 @@ const Test: React.FC = () => {
     getData();
   }, []);
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value);
   };
-
-  useEffect(() => {
-    const filteredData = data.filter((item) => item?.username === input);
-    setFilteredData(filteredData);
-  }, [input]);
-
-  console.log(input);
 
   return (
     <>
       <input onChange={handleChange}></input>
       <ul>
-        {filteredData.map((item) => (
+        {data.filter(item => input ? item.username.includes(input) : true).map((item) => (
           <li key={item?.id}>{`${item?.username} ${item.email}`}</li>
         ))}
       </ul>
