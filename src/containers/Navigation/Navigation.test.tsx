@@ -1,7 +1,6 @@
-import Navigation from "./Navigation";
+import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router";
-
-import { screen, render } from "@testing-library/react";
+import Navigation from "./Navigation";
 
 describe("Test Navigation Container", () => {
 	it("should render Navigation links", () => {

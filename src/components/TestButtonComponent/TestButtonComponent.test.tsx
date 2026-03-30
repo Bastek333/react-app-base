@@ -1,5 +1,5 @@
+import { render, screen } from "@testing-library/react";
 import TestButtonComponent from "./TestButtonComponent";
-import { screen, render } from "@testing-library/react";
 
 describe("TestButtonComponent", () => {
 	it("should render the title", () => {

@@ -1,12 +1,12 @@
-import { Routes, Route } from "react-router";
-import Home from "../containers/Home/Home";
-import Navigation from "../containers/Navigation/Navigation";
-import Footer from "../containers/Footer/Footer";
-import Vite from "../containers/Vite/Vite";
-import React from "../containers/React/React";
+import { Route, Routes } from "react-router";
 import Biome from "../containers/Biome/Biome";
-import Page404 from "../containers/Page404/Page404";
+import Footer from "../containers/Footer/Footer";
+import Home from "../containers/Home/Home";
 import Jokes from "../containers/Jokes/Jokes";
+import Navigation from "../containers/Navigation/Navigation";
+import Page404 from "../containers/Page404/Page404";
+import React from "../containers/React/React";
+import Vite from "../containers/Vite/Vite";
 
 import "./App.css";
 

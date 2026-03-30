@@ -3,7 +3,7 @@ import reactLogo from "../../assets/react.svg";
 const React = () => {
 	return (
 		<>
-			<a href="https://react.dev" target="_blank">
+			<a href="https://react.dev" target="_blank" rel="noopener">
 				<img src={reactLogo} className="logo react" alt="React logo" />
 			</a>
 		</>

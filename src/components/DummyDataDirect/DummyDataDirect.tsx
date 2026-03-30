@@ -1,6 +1,5 @@
-import React from "react";
-
-import { useState, useEffect } from "react";
+import type React from "react";
+import { useEffect, useState } from "react";
 
 interface DummyDataDrectInterface {
 	userId: number;

@@ -1,4 +1,4 @@
-import { screen, render, act } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import Jokes from "./Jokes.tsx";
 
 describe("Jokes container test", () => {

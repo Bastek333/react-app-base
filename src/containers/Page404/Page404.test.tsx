@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Page404 from "./Page404";
 
 describe("Page404 container test", () => {
