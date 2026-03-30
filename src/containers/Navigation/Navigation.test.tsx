@@ -11,8 +11,15 @@ describe("Test Navigation Container", () => {
       </BrowserRouter>,
     );
 
+<<<<<<< HEAD
     expect(screen.getByText("Home")).exist;
     expect(screen.getByText("Vite")).exist;
     expect(screen.getByText("React")).exist;
+=======
+    expect(screen.getByText('Home')).exist;
+    expect(screen.getByText('Vite')).exist;
+    expect(screen.getByText('React')).exist;
+    expect(screen.getByText('Biome')).exist;
+>>>>>>> origin/base
   });
 });

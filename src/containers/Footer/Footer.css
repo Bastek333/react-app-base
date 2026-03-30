@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  position: fixed;
+  right: calc((100vw - var(--app-max-width)) / 2);
+  bottom: 15px;
+  color: grey;
+}
