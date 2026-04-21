@@ -7,6 +7,7 @@ import Navigation from "../containers/Navigation/Navigation";
 import Page404 from "../containers/Page404/Page404";
 import React from "../containers/React/React";
 import Vite from "../containers/Vite/Vite";
+import Compiler from "../containers/Compiler/Compiler";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
 				<Route path="react" element={<React />} />
 				<Route path="biome" element={<Biome />} />
 				<Route path="jokes" element={<Jokes />} />
+				<Route path="compiler" element={<Compiler />} />
 				<Route path="*" element={<Page404 />} />
 			</Routes>
 			<Footer />

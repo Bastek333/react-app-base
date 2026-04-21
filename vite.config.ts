@@ -3,7 +3,11 @@ import { defineConfig as defineVitestConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 
 const viteConfig = defineViteConfig({
-  plugins: [react()],
+  plugins: [react({
+      babel: {
+        plugins: ['babel-plugin-react-compiler'],
+      },
+    })],
 });
 
 const vitestConfig = defineVitestConfig({

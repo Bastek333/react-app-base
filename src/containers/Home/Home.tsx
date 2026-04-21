@@ -2,7 +2,7 @@ import { useState } from "react";
 
 type CountState = number;
 
-const React = () => {
+const Home: React.FC = () => {
 	const intialState: CountState = 0;
 	const [count, setCount] = useState(intialState);
 
@@ -21,4 +21,4 @@ const React = () => {
 	);
 };
 
-export default React;
+export default Home;
