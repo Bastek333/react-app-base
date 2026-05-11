@@ -44,7 +44,11 @@ const InvalidateButton: React.FC = () => {
 		queryClient.invalidateQueries({ queryKey: ["repoData"] });
 	};
 
-	return <button type="button" onClick={handleClick}>Invalidate</button>;
+	return (
+		<button type="button" onClick={handleClick}>
+			Invalidate
+		</button>
+	);
 };
 
 export default ReactQuery;

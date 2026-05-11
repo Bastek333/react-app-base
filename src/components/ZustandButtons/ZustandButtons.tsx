@@ -12,9 +12,15 @@ const ZustandButtons = () => {
 
 	return (
 		<div className="card">
-			<button type="button" onClick={decrement}>Subtract count</button>
-			<button type="button" onClick={increment}>Add count</button>
-			<button type="button" onClick={reset}>Reset count</button>
+			<button type="button" onClick={decrement}>
+				Subtract count
+			</button>
+			<button type="button" onClick={increment}>
+				Add count
+			</button>
+			<button type="button" onClick={reset}>
+				Reset count
+			</button>
 		</div>
 	);
 };
