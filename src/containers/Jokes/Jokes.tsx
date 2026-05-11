@@ -14,7 +14,7 @@ const Jokes = () => {
 		<Suspense fallback={<Spinner />}>
 			<h2>Joke</h2>
 			<Joke jokePromise={apiCallPromise} />
-			<button onClick={onRefreshClick}>Refresh</button>
+			<button type="button" onClick={onRefreshClick}>Refresh</button>
 		</Suspense>
 	);
 };

@@ -29,3 +29,32 @@ function exampleFunction<T>(
 
 console.log(exampleFunction(1, "test"));
 console.log(exampleFunction("test", 1));
+
+interface Test {
+	id: number;
+	name: string;
+}
+
+type PickType = Pick<Test, "id">;
+type OmitType = Omit<Test, "name">;
+
+type A = string;
+type B = number;
+
+interface IA {
+	a: string;
+}
+interface IB {
+	b: number;
+}
+
+type IntersectionType = IA & IB;
+type UnionType = A | B;
+
+interface IC extends IA {
+	c: boolean;
+}
+
+const intersection: IntersectionType = { a: "test", b: 123 };
+const union: UnionType = "test";
+const intersectionInterface: IC = { a: "test", c: true };

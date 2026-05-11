@@ -1,5 +1,5 @@
 const TestButtonComponent = ({ title }: { title: string }) => {
-	return <button>{title}</button>;
+	return <button type="button">{title}</button>;
 };
 
 export default TestButtonComponent;

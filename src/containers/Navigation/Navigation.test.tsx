@@ -13,6 +13,7 @@ describe("Test Navigation Container", () => {
 		expect(screen.getByText("Home")).exist;
 		expect(screen.getByText("Vite")).exist;
 		expect(screen.getByText("React")).exist;
+		expect(screen.getByText("Zustand")).exist;
 		expect(screen.getByText("Biome")).exist;
 	});
 });
